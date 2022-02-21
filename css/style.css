@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: honeydew
+}
+
+.container {
+    margin: 32px auto;
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+    height: 200px;
+}
+
+.playground-heading {
+    color:lightpink;
+    font-family: 'Sacramento', cursive; 
+    font-size: 3rem;
+    position: relative; /*top-right-bottom-left*/
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes heading {
+    0% {top: -250px;}
+    100% {top: 50px;}
+}
+
+.main {
+    position: relative;
+    animation: textLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    border: 3px solid aqua; 
+    width: 50%; 
+    margin: 1rem auto;
+}
+
+@keyframes textLeft {
+    0% {left: -1000px;}
+    85% {left: 50px}
+    100% {left: 0;}
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+
+.ingredients-table {
+    margin: 0 auto;
+}
+
+.instructions {
+    border: 1px solid pink;
+    width: 50%;
+    margin: 2rem auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    animation: textRight;
+    animation-duration: 5s;
+}
+
+@keyframes textRight {
+    0% {right: -1000px;}
+    85% {right: 50px}
+    100% {right: 0;}
+}
+
+.instructions ol {
+    margin: 0 auto;
+    width: 10%;
+    text-align: center;
+}
+
+.pilt {
+    text-align: center;
+}
+
+.retsept {
+    text-align: center;
+}
+
+.btn {
+    opacity: 0;
+    border: 2px solid cyan;
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase; color: rgb(240, 198, 205);
+    animation: aniBtn;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aniBtn {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
+
+.footer {
+    font-family: 'Gideon Roman', cursive;
+    color: hotpink;
+    font-size: 0,5rem;
+    text-align: center;
+    padding-top: 250px;
+}
